@@ -25,81 +25,12 @@ namespace Lab_7
     {
         static void Main(string[] args)
         {
-            /*
-            //Get path of DB
-            string path = FileRoot.GetDefaultDirectory();
-            string fullPath = path + $"{Path.DirectorySeparatorChar}Data{Path.DirectorySeparatorChar}Library.db";
-            QueryBuilder qb = new QueryBuilder(fullPath);
-
-            using (qb)
-            {
-                //Single read command example
-                Author author = qb.Read<Author>(1);
-                Console.WriteLine("Single Read command\n" + author + "\n\n");
-
-
-
-                //Read all command example
-                List<Author> authors = qb.ReadAll<Author>();
-                Console.WriteLine("Read All command");
-                foreach (var item in authors)
-                {
-                    Console.WriteLine(item);
-                }
-                Console.WriteLine("\n");
-
-
-
-                //Create command example
-                Author newAuthor = new Author();
-                newAuthor.Id = 4;
-                newAuthor.FirstName = "John";
-                newAuthor.Surname = "Belemy";
-
-                qb.Create<Author>(newAuthor);
-
-                authors = qb.ReadAll<Author>();
-                Console.WriteLine("Create command:");
-                foreach (var item in authors)
-                {
-                    Console.WriteLine(item);
-                }
-                Console.WriteLine("\n");
-
-
-
-                //Update command example
-                newAuthor.Surname = "Larry";
-                qb.Update<Author>(newAuthor);
-
-                authors = qb.ReadAll<Author>();
-
-                Console.WriteLine("Update command:");
-                foreach (var item in authors)
-                {
-                    Console.WriteLine(item);
-                }
-                Console.WriteLine("\n");
-
-
-
-                //Delete command example
-                qb.Delete<Author>(newAuthor);
-
-                authors = qb.ReadAll<Author>();
-
-                Console.WriteLine("Delete command:");
-                foreach (var item in authors)
-                {
-                    Console.WriteLine(item);
-                }
-            
-            }
-            */
-
-            
            //Get Path
             string path = FileRoot.GetDefaultDirectory(); 
+
+            /*
+             * The below example is using the included JSON serializer classes in the System libraries.
+             */
 
             //Set Json Options
             JsonSerializerOptions options = new JsonSerializerOptions();
@@ -163,9 +94,6 @@ namespace Lab_7
             //Output object as Json file via serialization
             string output = JsonSerializer.Serialize<Book>(newBook, options);
             File.WriteAllText($"{path}{Path.DirectorySeparatorChar}Json{Path.DirectorySeparatorChar}Output.json", output);
-            
-
-            
         }
     }
 }
