@@ -16,8 +16,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Lab_7.Models;
-using System.Text.Json;
-using System.Text.Json.Serialization;
+using Newtonsoft.Json;
 
 namespace Lab_7
 {
@@ -29,13 +28,8 @@ namespace Lab_7
             string path = FileRoot.GetDefaultDirectory(); 
 
             /*
-             * The below example is using the included JSON serializer classes in the System libraries.
+             * The below example is using the Newtonsoft JSON package.
              */
-
-            //Set Json Options
-            JsonSerializerOptions options = new JsonSerializerOptions();
-            options.PropertyNameCaseInsensitive = true;
-            options.WriteIndented = true;
 
             //Read Json
             string flowerPath = path + $"{Path.DirectorySeparatorChar}Json{Path.DirectorySeparatorChar}flowers.json";
@@ -54,23 +48,23 @@ namespace Lab_7
             string starMake = File.ReadAllText(starMakePath);
 
             //Deserialize Json into object
-            Book flowerBook = JsonSerializer.Deserialize<Book>(flower, options);
+            Book flowerBook = JsonConvert.DeserializeObject<Book>(flower);
             Console.WriteLine(flowerBook);
             Console.WriteLine("\n\n\n");
 
-            Book falloutBook = JsonSerializer.Deserialize<Book>(fallout, options);
+            Book falloutBook = JsonConvert.DeserializeObject<Book>(fallout);
             Console.WriteLine(falloutBook);
             Console.WriteLine("\n\n\n");
 
-            Book hobbitBook = JsonSerializer.Deserialize<Book>(hobbit, options);
+            Book hobbitBook = JsonConvert.DeserializeObject<Book>(hobbit);
             Console.WriteLine(hobbitBook);
             Console.WriteLine("\n\n\n");
 
-            Book star3Book = JsonSerializer.Deserialize<Book>(star3, options);
+            Book star3Book = JsonConvert.DeserializeObject<Book>(star3);
             Console.WriteLine(star3Book);
             Console.WriteLine("\n\n\n");
 
-            Book starMakeBook = JsonSerializer.Deserialize<Book>(starMake, options);
+            Book starMakeBook = JsonConvert.DeserializeObject<Book>(starMake);
             Console.WriteLine(starMakeBook);
             Console.WriteLine("\n\n\n");
 
@@ -92,7 +86,7 @@ namespace Lab_7
             newBook.Items.Add(item);
             
             //Output object as Json file via serialization
-            string output = JsonSerializer.Serialize<Book>(newBook, options);
+            string output = JsonConvert.SerializeObject(newBook, Formatting.Indented);
             File.WriteAllText($"{path}{Path.DirectorySeparatorChar}Json{Path.DirectorySeparatorChar}Output.json", output);
         }
     }
