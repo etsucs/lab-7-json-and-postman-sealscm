@@ -24,70 +24,81 @@ namespace Lab_7
     {
         static void Main(string[] args)
         {
-           //Get Path
-            string path = FileRoot.GetDefaultDirectory(); 
-
             /*
-             * The below example is using the Newtonsoft JSON package.
+             //Get path of DB
+             string path = FileRoot.GetDefaultDirectory();
+             string fullPath = path + $"{Path.DirectorySeparatorChar}Data{Path.DirectorySeparatorChar}Library.db";
+             QueryBuilder qb = new QueryBuilder(fullPath);
+             using (qb)
+             {
+                 //Single read command example
+                 Author author = qb.Read<Author>(1);
+                 Console.WriteLine("Single Read command\n" + author + "\n\n");
+                 //Read all command example
+                 List<Author> authors = qb.ReadAll<Author>();
+                 Console.WriteLine("Read All command");
+                 foreach (var item in authors)
+                 {
+                     Console.WriteLine(item);
+                 }
+                 Console.WriteLine("\n");
+                 //Create command example
+                 Author newAuthor = new Author();
+                 newAuthor.Id = 4;
+                 newAuthor.FirstName = "John";
+                 newAuthor.Surname = "Belemy";
+                 qb.Create<Author>(newAuthor);
+                 authors = qb.ReadAll<Author>();
+                 Console.WriteLine("Create command:");
+                 foreach (var item in authors)
+                 {
+                     Console.WriteLine(item);
+                 }
+                 Console.WriteLine("\n");
+                 //Update command example
+                 newAuthor.Surname = "Larry";
+                 qb.Update<Author>(newAuthor);
+                 authors = qb.ReadAll<Author>();
+                 Console.WriteLine("Update command:");
+                 foreach (var item in authors)
+                 {
+                     Console.WriteLine(item);
+                 }
+                 Console.WriteLine("\n");
+                 //Delete command example
+                 qb.Delete<Author>(newAuthor);
+                 authors = qb.ReadAll<Author>();
+                 Console.WriteLine("Delete command:");
+                 foreach (var item in authors)
+                 {
+                     Console.WriteLine(item);
+                 }
+
+             }
              */
 
-            //Read Json
-            string flowerPath = path + $"{Path.DirectorySeparatorChar}Json{Path.DirectorySeparatorChar}flowers.json";
-            string flower = File.ReadAllText(flowerPath);
+            //Readall for Users
+            string path = FileRoot.GetDefaultDirectory();
+            string fullPath = path + $"{Path.DirectorySeparatorChar}Data{Path.DirectorySeparatorChar}Library.db";
+            QueryBuilder qb = new QueryBuilder(fullPath);
+            using (qb)
+            {
+                List<Users> users = qb.ReadAll<Users>();
 
-            string falloutPath = path + $"{Path.DirectorySeparatorChar}Json{Path.DirectorySeparatorChar}fallout.json";
-            string fallout = File.ReadAllText(falloutPath);
+                string output = JsonConvert.SerializeObject(users, Formatting.Indented);
 
-            string hobbitPath = path + $"{Path.DirectorySeparatorChar}Json{Path.DirectorySeparatorChar}hobbit.json";
-            string hobbit = File.ReadAllText(hobbitPath);
-
-            string star3Path = path + $"{Path.DirectorySeparatorChar}Json{Path.DirectorySeparatorChar}star3.json";
-            string star3 = File.ReadAllText(star3Path);
-
-            string starMakePath = path + $"{Path.DirectorySeparatorChar}Json{Path.DirectorySeparatorChar}starMake.json";
-            string starMake = File.ReadAllText(starMakePath);
-
-            //Deserialize Json into object
-            Book flowerBook = JsonConvert.DeserializeObject<Book>(flower);
-            Console.WriteLine(flowerBook);
-            Console.WriteLine("\n\n\n");
-
-            Book falloutBook = JsonConvert.DeserializeObject<Book>(fallout);
-            Console.WriteLine(falloutBook);
-            Console.WriteLine("\n\n\n");
-
-            Book hobbitBook = JsonConvert.DeserializeObject<Book>(hobbit);
-            Console.WriteLine(hobbitBook);
-            Console.WriteLine("\n\n\n");
-
-            Book star3Book = JsonConvert.DeserializeObject<Book>(star3);
-            Console.WriteLine(star3Book);
-            Console.WriteLine("\n\n\n");
-
-            Book starMakeBook = JsonConvert.DeserializeObject<Book>(starMake);
-            Console.WriteLine(starMakeBook);
-            Console.WriteLine("\n\n\n");
-
-
+                File.WriteAllText(path + $"{Path.DirectorySeparatorChar}Json{Path.DirectorySeparatorChar}Output.json", output);
+            }
             
-            //Create new Book object to serialize
-            List<string> authors = new List<string>();
-            authors.Add("Me");
-            Volume volume = new Volume();
-            volume.Authors = authors;
-            volume.Description = "This is Book";
-            volume.Title = "Book Book";
-            Item item = new Item();
-            item.SelfLink = "www.ThisBook.com";
-            item.Id = "235436";
-            item.VolumeInfo = volume;
-            Book newBook = new Book();
-            newBook.Items = new List<Item>();
-            newBook.Items.Add(item);
-            
-            //Output object as Json file via serialization
-            string output = JsonConvert.SerializeObject(newBook, Formatting.Indented);
-            File.WriteAllText($"{path}{Path.DirectorySeparatorChar}Json{Path.DirectorySeparatorChar}Output.json", output);
+            using (qb)
+            {
+                string input = File.ReadAllText(path + $"{Path.DirectorySeparatorChar}Json{Path.DirectorySeparatorChar}Input.json");
+
+                Books book = JsonConvert.DeserializeObject<Books>(input);
+
+                Console.WriteLine(book);
+            }
+
         }
     }
 }

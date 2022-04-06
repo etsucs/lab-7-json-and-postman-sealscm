@@ -1,15 +1,29 @@
-{
-  "Items": [
-    {
-      "Id": "235436",
-      "SelfLink": "www.ThisBook.com",
-      "VolumeInfo": {
-        "Title": "Book Book",
-        "Authors": [
-          "Me"
-        ],
-        "Description": "This is Book"
-      }
-    }
-  ]
-}
+[
+  {
+    "Id": 1,
+    "UserName": "chrisseals",
+    "UserAddress": "123 nowhere st",
+    "OtherUserDetails": "Student",
+    "AmountOfFine": 123.23,
+    "Email": "seals@email.com",
+    "PhoneNumber": "123-123-1234"
+  },
+  {
+    "Id": 2,
+    "UserName": "samimorris",
+    "UserAddress": "321 this st",
+    "OtherUserDetails": "Grad Student",
+    "AmountOfFine": 0.0,
+    "Email": "sami@mail.edu",
+    "PhoneNumber": "321-321-4321"
+  },
+  {
+    "Id": 3,
+    "UserName": "jeremyFitz",
+    "UserAddress": "987 Timbuktoo Cr",
+    "OtherUserDetails": "teacher",
+    "AmountOfFine": 800.0,
+    "Email": "fitz2u@hotmail.com",
+    "PhoneNumber": "123-321-5312"
+  }
+]
