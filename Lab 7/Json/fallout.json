@@ -1,0 +1,79 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "gBqVzQEACAAJ",
+      "etag": "Mzr8QiXHIc0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/gBqVzQEACAAJ",
+      "volumeInfo": {
+        "title": "Fallout: The Vault Dweller's Official Cookbook Gift Set",
+        "authors": [
+          "Victoria Rosenthal"
+        ],
+        "publisher": "Insight Editions",
+        "publishedDate": "2020-11-10",
+        "description": "Fallout®: The Vault Dweller's Official Cookbook Gift Set includes a cookbook packed with mouthwatering recipes straight from the hit video game series and an exclusive apron. The bestselling Fallout®: The Vault Dweller’s Official Cookbook is now a fun gift set featuring an adjustable apron designed to look like an official Vault-Tec™ suit. Based on the irradiated delicacies found in the award-winning Fallout® video game series, this Vault-Tec™ approved cookbook provides fans of the game with over seventy recipes inspired by their favorite Fallout® foods. Whip up tasty versions of Yum Yum Deviled Eggs, throw some deathclaw meat on the grill, and recreate BlamCo Mac & Cheese with Fallout®: The Vault Dweller’s Official Cookbook Gift Set.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1647222664"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781647222666"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 192,
+        "printType": "BOOK",
+        "categories": [
+          "Cooking"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=gBqVzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=gBqVzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=gBqVzQEACAAJ&dq=intitle:Fallout-Gift+inauthor:%22Victoria+Rosenthal%22+inpublisher:%22Insight+Editions%22&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=gBqVzQEACAAJ&dq=intitle:Fallout-Gift+inauthor:%22Victoria+Rosenthal%22+inpublisher:%22Insight+Editions%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Fallout_The_Vault_Dweller_s_Official_Coo.html?hl=&id=gBqVzQEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=gBqVzQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Fallout®: The Vault Dweller&#39;s Official Cookbook Gift Set includes a cookbook packed with mouthwatering recipes straight from the hit video game series and an exclusive apron."
+      }
+    }
+  ]
+}

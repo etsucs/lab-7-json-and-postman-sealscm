@@ -1,0 +1,84 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "kBAS0zBfWCgC",
+      "etag": "JuafP+800Zc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/kBAS0zBfWCgC",
+      "volumeInfo": {
+        "title": "Star Wars®: Episode III: Revenge of the Sith",
+        "authors": [
+          "Patricia C. Wrede",
+          "George Lucas"
+        ],
+        "publisher": "Scholastic Inc.",
+        "publishedDate": "2012-04-01",
+        "description": "Award-winning author Patricia C. Wrede tells the final chapter of the Star Wars saga, in this incredible novel based on one of the most eagerly awaited movies of all time. The circle will now be complete: the final installment of the Star Wars saga, showing the emergence of Darth Vader, the downfall of the Jedi, and the revenge of the Sith.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780545482318"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0545482313"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 192,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "averageRating": 3,
+        "ratingsCount": 3,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.3.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=kBAS0zBfWCgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=kBAS0zBfWCgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=kBAS0zBfWCgC&pg=PP3&dq=intitle:%22Star+Wars%C2%AE:+Episode+III:+Revenge+of+the+Sith%22+inauthor:%22Patricia+C.+Wrede%22+%22George+Lucas%22+inpublisher:%22Scholastic+Inc.%22&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=kBAS0zBfWCgC&dq=intitle:%22Star+Wars%C2%AE:+Episode+III:+Revenge+of+the+Sith%22+inauthor:%22Patricia+C.+Wrede%22+%22George+Lucas%22+inpublisher:%22Scholastic+Inc.%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Star_Wars_Episode_III_Revenge_of_the_Sit.html?hl=&id=kBAS0zBfWCgC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Star_Wars_Episode_III_Revenge_of_the_Sit-sample-epub.acsm?id=kBAS0zBfWCgC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Star_Wars_Episode_III_Revenge_of_the_Sit-sample-pdf.acsm?id=kBAS0zBfWCgC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=kBAS0zBfWCgC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "EPISODE III ® REVENGE OF THE SITH Patricia C. Wrede Based on the story and screenplay by \u003cb\u003eGeorge Lucas\u003c/b\u003e SCHOLASTIC INC. New York Toronto London Auckland Sydney Mexico City New Delhi Hong Kong Buenos Aires TM www.starwars.com&nbsp;..."
+      }
+    }
+  ]
+}

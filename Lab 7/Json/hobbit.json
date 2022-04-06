@@ -1,0 +1,81 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "I3_anAEACAAJ",
+      "etag": "/LVN8t/vqeA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/I3_anAEACAAJ",
+      "volumeInfo": {
+        "title": "The Hobbit, Or, There and Back Again",
+        "authors": [
+          "J. R. R. Tolkien"
+        ],
+        "publisher": "Mariner Books",
+        "publishedDate": "2013",
+        "description": "Bilbo Baggins, a respectable, well-to-do hobbit, lives comfortably in his hobbit-hole until the day the wandering wizard Gandalf chooses him to take part in an adventure from which he may never return.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0544164229"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780544164222"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 300,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 537,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=I3_anAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=I3_anAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=I3_anAEACAAJ&dq=intitle:%22The+Hobbit%22+inauthor:%22J.+R.+R.+Tolkien%22+inpublisher:%22Mariner+Books%22&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=I3_anAEACAAJ&dq=intitle:%22The+Hobbit%22+inauthor:%22J.+R.+R.+Tolkien%22+inpublisher:%22Mariner+Books%22&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Hobbit_Or_There_and_Back_Again.html?hl=&id=I3_anAEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=I3_anAEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Bilbo Baggins, a respectable, well-to-do hobbit, lives comfortably in his hobbit-hole until the day the wandering wizard Gandalf chooses him to take part in an adventure from which he may never return."
+      }
+    }
+  ]
+}

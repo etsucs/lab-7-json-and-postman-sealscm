@@ -1,0 +1,75 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "pYa8nQEACAAJ",
+      "etag": "nahEVZcsBMI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/pYa8nQEACAAJ",
+      "volumeInfo": {
+        "title": "The Making of Star Wars",
+        "subtitle": "The Definitive Story Behind the Original Film",
+        "authors": [
+          "J. W. Rinzler"
+        ],
+        "publishedDate": "2013",
+        "description": "George Lucas spent nearly ten years bringing his dream project to life: a ground-breaking space fantasy movie. It would be a swashbuckling sci-fi saga inspired by vintage Flash Gordon serials, classic American westerns, and mythological heroes. Its original title: The Star Wars. The rest is history. Yet its production is a story as entertaining and exciting as the film itself. Now, recounted in the words of those who were there, it is finally being told, for the first time. During the years 1975 to 1978, over fifty interviews were conducted with key members of the cast and crew. Remarkably these interviews have sat, undisturbed, in the Lucasfilm Archives for three decades. Until now. The interviews are fresh, candid and – above all – more accurate than many other reported accounts. George Lucas, Mark Hamill, Harrison Ford, Carrie Fisher, Anthony Daniels, composer John Williams, legendary production designer John Barry, and a host of others share their fascinating tales of overcoming obstacles – storms, crises, technical limitations, high stress and bitter disappointment – while displaying real ingenuity, heroism and creativity. Using his unprecedented access to the Lucasfilm Archives and this trove of never-before-published ‘lost’ interviews, photographs, production notes, factoids and anecdotes, J. W. Rinzler hurtles readers back in time for a definitive look at the making of Star Wars. For the first time, it’s all here: * The evolution of the now-classic story and characters – including ‘Annikin Starkiller’ and a ‘huge green-skinned monster with no nose and large gills’ named Han Solo * Excerpts from George Lucas’s numerous, ever-morphing script drafts * The birth of Industrial Light & Magic, the special-effects company that revolutionised Hollywood film-making * The studio-hopping and budget battles that nearly derailed the entire project * The director’s early casting saga * The gruelling, nearly catastrophic location shoot in Tunisia and the following breakneck dash to Elstree Studios in London Lavishly illustrated with hundreds of images spanning the creation of the film, The Making of Star Wars is a piece of cinema history. It is the true story of human endeavour and creativity that led to the production of one of the most outstanding and innovative movies of all time.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1781311900"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781781311905"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 372,
+        "printType": "BOOK",
+        "categories": [
+          "Performing Arts"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=pYa8nQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=pYa8nQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=pYa8nQEACAAJ&dq=isbn:1781311900&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=pYa8nQEACAAJ&dq=isbn:1781311900&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Making_of_Star_Wars.html?hl=&id=pYa8nQEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=pYa8nQEACAAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Originally published for the 30th anniversary of the original Star Wars movie, this is a must-have book for all &#39;Star Wars&#39; fans and movie lovers."
+      }
+    }
+  ]
+}
